@@ -52,7 +52,7 @@ async function checkStatus() {
             mintStartBlockNumber = parseInt(result[4]);
             maxSaleAmount = parseInt(result[5]);
             mintPrice = parseInt(result[6]);
-            document.getElementById("mint-cnt").innerHTML = `${mintIndexForSale} / ${maxSaleAmount}`;
+            document.getElementById("mint-cnt").innerHTML = `${mintIndexForSale ? mintIndexForSale - 1 : 0} / ${maxSaleAmount}`;
             document.getElementById("mint-limit-per-block").innerHTML = `${mintLimitPerBlock}개`;
             document.getElementById("mint-limit-per-sale").innerHTML = `${mintLimitPerSale}개`;
             document.getElementById("mint-start-block-number").innerHTML = `#${mintStartBlockNumber}`;

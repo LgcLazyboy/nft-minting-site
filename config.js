@@ -1,4 +1,4 @@
-const CONTRACT_ADDRESS  = "0xD58BaD3c54287963C843BD9e5ff1A52925C61B2d";
+const CONTRACT_ADDRESS  = "여기에 컨트랙트 주소를 입력하세요";
 const ABI = [
 	{
 		"inputs": [
